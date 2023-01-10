@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/conversation"
+        android:enabled="true"
+        android:icon="@drawable/icon_selector_conversation"
+        android:title="conversation"
+        />
+
+    <item android:id="@+id/dictionary"
+        android:enabled="true"
+        android:icon="@drawable/icon_selector_dictionary"
+        android:title="dictionary"
+        />
+
+    <item android:id="@+id/exam"
+        android:enabled="true"
+        android:icon="@drawable/icon_selector_exam"
+        android:title="exam"
+        />
+
+</menu>
