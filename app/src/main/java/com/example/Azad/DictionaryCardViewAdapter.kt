@@ -52,7 +52,7 @@ class DictionaryCardViewAdapter (private val mList: ArrayList<dictionaryItemView
 
     // Holds the views for adding it to image and text
     class ViewHolder(ItemView: View,context:Context) : RecyclerView.ViewHolder(ItemView) {
-        val world_view: TextView = itemView.findViewById(R.id.exam_world)
+        val world_view: TextView = itemView.findViewById(R.id.exam_title)
         val translated_world_view: TextView = itemView.findViewById(R.id.exam_about)
         val lesson_view: TextView = itemView.findViewById(R.id.exam_Lesson)
         var onClick:(it:View)->Unit = {}

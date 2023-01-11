@@ -5,6 +5,39 @@ import com.example.Azad.ItemsViewModel
 object staticData {
 
 
+    val exam_data: ArrayList<examItemView> = arrayListOf(
+        examItemView(
+            "test",
+            "fjoihsdhfiusdhf",
+            "L4",
+            "http://192.168.1.1"
+        ),
+        examItemView(
+            "test",
+            "fjoihsdhfiusdhf",
+            "L4",
+            "http://192.168.1.1"
+        ),
+        examItemView(
+            "test",
+            "fjoihsdhfiusdhf",
+            "L4",
+            "http://192.168.1.1"
+        ),
+        examItemView(
+            "test",
+            "fjoihsdhfiusdhf",
+            "L4",
+            "http://192.168.1.1"
+        ),
+        examItemView(
+            "test",
+            "fjoihsdhfiusdhf",
+            "L4",
+            "http://192.168.1.1"
+        ),
+    )
+
     val conversations_data: ArrayList<ItemsViewModel> = arrayListOf(
         ItemsViewModel(
             0,

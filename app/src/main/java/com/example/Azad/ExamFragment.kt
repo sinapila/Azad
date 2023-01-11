@@ -25,66 +25,17 @@ class ExamFragment : Fragment() {
     ): View? {
 
 //         Add the following lines to create RecyclerView
-        Log.v("sinaaaa", "onCreateViewHolder: ")
 
-        var vieww: View = layoutInflater.inflate(R.layout.fragment_dictionary, container, false)
+        var vieww: View = layoutInflater.inflate(R.layout.fragment_exam, container, false)
 
 
-        val SearchBar: SearchView = vieww.findViewById(R.id.SearchBarDictianory);
+        val data = staticData.exam_data
 
-        val data = staticData.dictionary_data
-        data.sortWith(compareBy { it.world })
-        data.distinctBy { it.world }
-
-        recyclerView = vieww.findViewById(R.id.dicshenery_recycler_view);
+        recyclerView = vieww.findViewById(R.id.exam_recycler_view);
 //            recyclerView?.setHasFixedSize(true);
-        var mAdapter = DictionaryCardViewAdapter(data.clone() as ArrayList<dictionaryItemView>, vieww.context);
+        var mAdapter = ExamCardViewAdapter(data, vieww.context);
         recyclerView?.layoutManager = LinearLayoutManager(vieww.context);
         recyclerView?.adapter = mAdapter
-
-
-        SearchBar.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String): Boolean {
-                return false
-            }
-
-            override fun onQueryTextChange(newText: String): Boolean {
-
-
-//                val ex_data = ArrayList<dictionaryItemView>()
-//
-//                val data = staticData.dictionary_data.forEach {
-//                    if (newText.isNotEmpty()) {
-//                        if (it.world.contains(newText) || it.world_translated.contains(newText)) {
-//                            ex_data.add(it)
-//                        }
-//                    }else{
-//                        ex_data.addAll(data)
-//                    }
-//                }
-//                mAdapter.setData(ex_data)
-
-
-                if (newText!!.isNotEmpty()) {
-
-                    val cloneList = data.clone() as ArrayList<dictionaryItemView>
-                    val filteredList = cloneList.filter { foodItem ->
-                        foodItem.world.contains( newText ) || foodItem.world_translated.contains(newText) || (newText.toIntOrNull() != null && foodItem.lesson.contains(newText))
-                    }
-
-                    mAdapter.setData(  ArrayList( filteredList )  )
-
-
-                } else {
-
-                    mAdapter.setData(data.clone() as ArrayList<dictionaryItemView>)
-
-                }
-
-
-                return false
-            }
-        })
 
 
         return vieww

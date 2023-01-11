@@ -19,3 +19,9 @@ data class dictionaryItemView(
     val world_translated:String,
     val lesson : String
 )
+data class examItemView(
+    val title:String,
+    val about:String,
+    val lesson : String,
+    val url : String,
+)

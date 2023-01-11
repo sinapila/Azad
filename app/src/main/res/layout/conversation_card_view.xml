@@ -24,7 +24,7 @@
             android:src="@drawable/icons8_conversation_64" />
 
         <TextView
-            android:id="@+id/exam_world"
+            android:id="@+id/exam_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"

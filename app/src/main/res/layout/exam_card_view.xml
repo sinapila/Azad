@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/eexam_card_view"
+    android:id="@+id/exam_card_view"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:layout_margin="15dp"
@@ -11,14 +9,13 @@
     android:foreground="?selectableItemBackground"
     app:cardCornerRadius="10dp"
     app:cardElevation="3dp">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/exam_world"
+            android:id="@+id/exam_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="1"
@@ -50,7 +47,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exam_world"
+            app:layout_constraintTop_toBottomOf="@+id/exam_title"
             app:layout_constraintVertical_bias="0.23000002" />
 
         <TextView
@@ -70,6 +67,5 @@
             app:layout_constraintVertical_bias="0.219" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.cardview.widget.CardView>
