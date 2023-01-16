@@ -7,10 +7,10 @@ object staticData {
 
     val exam_data: ArrayList<examItemView> = arrayListOf(
         examItemView(
-            "test",
-            "fjoihsdhfiusdhf",
-            "L4",
-            "http://192.168.1.1"
+            "آزمون جامع تستی درس ۱ انگلیسی دهم",
+            "Lesson 1: Saving Nature",
+            "L1",
+            "https://docs.google.com/forms/d/e/1FAIpQLSd1uu2TeDUipKalMmMJqTEFaiSnEUNQczMvK5us9kMLeJsAWw/viewform?usp=sf_link"
         ),
         examItemView(
             "test",

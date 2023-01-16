@@ -33,7 +33,10 @@ class DictionaryFragment : Fragment() {
 
         val SearchBar:SearchView = vieww.findViewById(R.id.SearchBarDictianory);
 
-        val data = staticData.dictionary_data
+        var data = staticData.dictionary_data
+        Log.v("sinaaaa", data.distinctBy { dictionaryItemView: dictionaryItemView -> dictionaryItemView.world }.toString())
+
+        data = data.distinctBy { dictionaryItemView: dictionaryItemView -> dictionaryItemView.world } as ArrayList<dictionaryItemView>
         data.sortWith(compareBy { it.world })
         data.distinctBy { it.world }
 

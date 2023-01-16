@@ -19,7 +19,7 @@ class Loading_Activity : AppCompatActivity() {
         animationView.playAnimation()
         Handler().postDelayed({
             val myIntent = Intent(this, MainActivity::class.java)
-            myIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            myIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NO_ANIMATION
             this.startActivity(myIntent)
         }, 1500)
     }

@@ -37,11 +37,20 @@ class MainActivity : AppCompatActivity() {
                 R.id.exam ->{
                     replaceFragment(ExamFragment())
                 }
+                R.id.about_us ->{
+                    replaceFragment(AboutUsFragment())
+                }
 
             }
 
             true
         }
+
+        StartHelp()
+
+    }
+
+    private fun StartHelp() {
 
     }
 

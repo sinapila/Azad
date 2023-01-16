@@ -38,8 +38,8 @@ class DictionaryCardViewAdapter (private val mList: ArrayList<dictionaryItemView
 
         holder.onClick={
 
-            val myIntent = Intent(Intent.ACTION_VIEW)
-            myIntent.data = Uri.parse(url)
+            val myIntent = Intent(context,LoadWebActivity::class.java)
+            myIntent.putExtra("url", url);
             context.startActivity(myIntent)
         }
 
